@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="#4A0257">
+
+    <ImageView
+        android:id="@+id/mainimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp"
+        android:maxWidth="400dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="T-Lens - Scan and Search Images"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:textStyle="bold"
+        android:backgroundTint="#fff"
+        android:textColor="#4A0257"
+        android:id="@+id/upload_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Upload Photo" />
+
+    <Button
+        android:textStyle="bold"
+        android:backgroundTint="#fff"
+        android:textColor="#4A0257"
+        android:id="@+id/click_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Click Photo from Camera" />
+
+    <Button
+        android:textStyle="bold"
+        android:backgroundTint="#fff"
+        android:textColor="#4A0257"
+        android:id="@+id/getsearchresults"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Get Search Results" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    </ScrollView>
+
+</LinearLayout>
